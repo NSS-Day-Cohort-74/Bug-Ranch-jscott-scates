@@ -76,11 +76,11 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > The value of drovers is an array that is filled with randomly selected objects from the drovers array in the database. 
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > We created the const value of drover that would hold the information collected during the functions execution that accessed the drovers array. 
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > [Your public Loom URL here](https://www.loom.com/share/5abe2f0b31174bc9b63f4cc671340988?sid=b4c61c21-9882-4d72-93d1-8882ce30dc3b)
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -88,11 +88,11 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > Using a for loop, the code is starting the forestNumber at 0, is then looping through the logic until the forestNumber is greater than the forest number pushed into the areas.forests value. The forestNumber ++ indicates that as long as the condition is met, there will be "1" added to the forestNumber.
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > The database variable is an object that contains multiple arrays (cattleTypes and drivers) each containing an index of relevant objects with unique properties that can be accessed in other parts of the code.  
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > herdSize is a parameter that is being passed into the function, it acts as a way for you to pass a relevant variable such as cattleToDrive later on in the code to execute the function. 
 
 ## When You Are Done
 

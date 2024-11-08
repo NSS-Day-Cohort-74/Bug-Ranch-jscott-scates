@@ -7,7 +7,7 @@ const createRivers = () => {
 
 const createMountains = () => {
     const mountains = Math.floor(Math.random() * 2) + 1
-    return mauntains
+    return mountains  //corrected spelling on variable
 }
 
 const createForests = () => {
@@ -24,10 +24,10 @@ const journeyMaker = () => {
     const journey = []
 
     const areas = {
-        rivers: createRiver(),
-        forests: createForest(),
-        mountains: createMountain(),
-        plains: createPlain()
+        rivers: createRivers(),  //s was missing from the createRivers variable declared earlier in the code
+        forests: createForests(),  //s was missing rom the createForests variable declared earlier
+        mountains: createMountains(), //s was missing from variable name
+        plains: createPlains() //s was missing from variable name
     }
 
     for (let riverNumber = 0; riverNumber < areas.rivers; riverNumber++) {
@@ -51,5 +51,5 @@ const journeyMaker = () => {
 
 module.exports = {
     createRivers, createForests,
-    createMountains, createPlains
+    createMountains, createPlains, journeyMaker  //added journeyMaker, missing from export but referenced in import
 }
